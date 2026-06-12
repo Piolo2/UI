@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="login-card">
+    <h2>Welcome Back</h2>
+    <p class="subtitle">Please enter your username and password to log in</p>
+    
+    <!-- Login Form -->
+    <form id="login-form">
+      <div class="input-group">
+        <label for="username">Username</label>
+        <input type="text" id="username" placeholder="Enter username" required autocomplete="username">
+      </div>
+      
+      <div class="input-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="Enter password" required autocomplete="current-password">
+      </div>
+      
+      <button type="submit" class="submit-btn">Log In</button>
+    </form>
+    
+    <!-- Simple success/error message box -->
+    <div id="message" class="message" style="display: none;"></div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
